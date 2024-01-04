@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OBiletCase.Web", "OBiletCase.Web\OBiletCase.Web.csproj", "{973433FF-DA26-453E-B884-957D82E5557A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OBiletCase.Core", "OBiletCase.Core\OBiletCase.Core.csproj", "{9E286EFC-ADEB-48CD-8E18-71616EA3EB3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{973433FF-DA26-453E-B884-957D82E5557A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{973433FF-DA26-453E-B884-957D82E5557A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{973433FF-DA26-453E-B884-957D82E5557A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{973433FF-DA26-453E-B884-957D82E5557A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E286EFC-ADEB-48CD-8E18-71616EA3EB3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E286EFC-ADEB-48CD-8E18-71616EA3EB3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E286EFC-ADEB-48CD-8E18-71616EA3EB3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E286EFC-ADEB-48CD-8E18-71616EA3EB3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D4E8FC1-606B-4651-BFA5-5F15CF34CC3E}
+	EndGlobalSection
+EndGlobal

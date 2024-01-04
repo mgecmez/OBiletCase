@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="header-container"></div>
+<div class="home-container">
+    <form id="search">
+        <div class="home-search">
+            <div class="group location origin">
+                <label for="ddlOriginLocations">Nereden</label>
+                <div class="input-group">
+                    <i class="fa-solid fa-location-pin"></i>
+                    <select id="ddlOriginLocations" name="origin-location"></select>
+                </div>
+                <button type="button" id="change">
+                    <i class="fa-solid fa-arrows-up-down"></i>
+                </button>
+            </div>
+            <div class="group location destination">
+                <label for="ddlDestinationLocations">Nereye</label>
+                <div class="input-group">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <select id="ddlDestinationLocations" name="destination-location"></select>
+                </div>
+            </div>
+            <div class="group departure">
+                <label for="dpDeparture">Tarih</label>
+                <div class="input-group">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <input type="text" id="dpDeparture" name="departure-date">
+                </div>
+                <button type="button" id="today" class="">Bugün</button>
+                <button type="button" id="tomorrow" class="">Yarın</button>
+            </div>
+            <button id="search-button" type="submit">Bileti Bul</button>
+        </div>
+    </form>
+</div>
+
+@section scripts {
+    <script>
+        initIndex();
+    </script>
+}

@@ -1,0 +1,240 @@
+body {
+    width: 320pt;
+    height: 568pt;
+    position: relative;
+}
+
+main {
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+    main::-webkit-scrollbar {
+        display: none;
+    }
+
+.header-container {
+    background: #2F4EB4;
+    color: #fff;
+    z-index: 200;
+    min-height: 40pt;
+    text-align: center;
+    position: relative;
+}
+
+    .header-container label {
+        display: block;
+    }
+
+        .header-container label:first-of-type {
+            padding-top: 16px;
+            font-size: 14pt;
+        }
+
+        .header-container label:last-of-type {
+            padding-bottom: 16px;
+            font-size: 12pt;
+        }
+
+    .header-container button {
+        position: absolute;
+        left: 1%;
+        top: 50%;
+        margin: 0;
+        transform: translate(10px, -85%);
+        background: none;
+        border: none;
+    }
+
+        .header-container button i {
+            color: #fff;
+            font-size: 16pt;
+        }
+
+.home-container {
+    padding: 8pt 8pt;
+    background: #F8F8F8;
+}
+
+#search {
+    text-align: center;
+}
+
+form#search .home-search > div {
+    padding: 15pt 8pt;
+    background: #fff;
+}
+
+#searh label {
+    font-size: 14pt;
+    background: #2F4EB4;
+}
+
+.group {
+    position: relative;
+    text-align: left;
+    margin-bottom: 0.3em;
+    border-bottom: none !important;
+}
+
+#search .group .input-group, #search .group .hasDatepicker, #search .group .select2 {
+    max-height: 2.6em !important;
+}
+
+#search .group label {
+    margin-left: 25px;
+}
+
+#search .group .hasDatepicker, #search .group .select2 {
+    margin-left: 15px;
+}
+
+#search .group .input-group i {
+    padding-top: 5px;
+}
+
+[class^='select2'] {
+    border: none !important;
+    flex: 1;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left: 0px !important;
+}
+
+.group > [type=button] {
+    position: absolute;
+    right: 0.8em;
+}
+
+#search .group #change {
+    padding: 0;
+    background: #fff;
+    z-index: 100;
+    bottom: -1.5em;
+    border-radius: 30px;
+}
+
+    #search .group #change i {
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+
+.departure > button {
+    padding: 0.4em 0;
+    width: 5.2em;
+    border: 1px solid #9d9d9c;
+    border-radius: 0.25em;
+    font-size: .8em;
+    right: 0.5em !important;
+}
+
+#today {
+    top: 0.6em;
+}
+
+#tomorrow {
+    top: 3.3em;
+}
+
+    #today.active, #today:focus, #tomorrow.active, #tomorrow:focus {
+        background-color: #5d686e;
+        border-color: #5d686e;
+        color: #fff;
+    }
+
+#search-button {
+    margin: 0.9em 0 0.4em;
+    padding: 0.5em;
+    min-width: 80%;
+    border-radius: 0.3em;
+    font-size: 1.2em;
+    background: #2F4EB4;
+    color: #fff;
+    line-height: 1.19em;
+}
+
+#search #search-button {
+    height: 2.19em;
+}
+
+#search #search-button {
+    margin: 0.9em 0 0.4em;
+    max-width: calc(45em * .8);
+}
+
+.home-container .journey {
+    width: 304pt;
+    margin-bottom: 3px;
+    border: solid 0.5pt #B4B4B4;
+    border-radius: 3pt;
+    display: grid;
+}
+
+    .home-container .journey > div {
+        margin: 5pt;
+        position: relative;
+    }
+
+    .home-container .journey .departure, .home-container .journey .arrival, .home-container .journey .arrow {
+        text-align: center;
+        display: inline-block;
+    }
+
+    .home-container .journey .arrow {
+        padding: 0 3pt;
+    }
+
+        .home-container .journey .arrow i {
+            color: #192289;
+        }
+
+    .home-container .journey .departure label, .home-container .journey .arrival label {
+        display: block;
+    }
+
+        .home-container .journey .departure label:first-of-type, .home-container .journey .arrival label:first-of-type {
+            color: #3640B1;
+            font-size: 9pt;
+        }
+
+        .home-container .journey .departure label:last-of-type, .home-container .journey .arrival label:last-of-type {
+            color: #192289;
+            font-size: 15pt;
+        }
+
+    .home-container .journey .locations {
+        text-align: left;
+        display: block;
+        margin: 5px 0px;
+    }
+
+        .home-container .journey .locations label {
+            color: #083145;
+            font-size: 12pt;
+            display: block;
+        }
+
+    .home-container .journey .price {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+        .home-container .journey .price div {
+            background: #D23B38;
+            width: 72pt;
+            height: 26pt;
+            border-radius: 5pt;
+            text-align: center;
+        }
+
+            .home-container .journey .price div label {
+                color: #FFFFFF;
+                font-size: 14pt;
+                padding-top: 3pt;
+            }

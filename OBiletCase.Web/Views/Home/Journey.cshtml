@@ -1,0 +1,40 @@
+﻿@model OBiletCase.Core.Dtos.GetBusJourneyOutDto
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<div class="header-container">
+    <button onclick="window.history.back();">
+        <i class="fa-solid fa-arrow-left"></i>
+    </button>
+    <label>@Model.OriginLocation - @Model.DestinationLocation</label>
+    <label>@Model.DepartureDate</label>
+</div>
+<div class="home-container">
+    @foreach (var journey in Model.BusJourneys)
+    {
+        <div class="journey">
+            <div>
+                <div class="departure">
+                    <label>KALKIS</label>
+                    <label>@journey.DepartureDate.ToString("HH:mm")</label>
+                </div>
+                <div class="arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="arrival">
+                    <label>VARIS</label>
+                    <label>@journey.ArrivalDate.ToString("HH:mm")</label>
+                </div>
+                <div class="locations">
+                    <label>@journey.Origin - @journey.Destination</label>
+                </div>
+                <div class="price">
+                    <div>
+                        <label>@Math.Truncate(journey.Price) @journey.Currency</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
