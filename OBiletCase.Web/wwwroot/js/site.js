@@ -68,10 +68,7 @@ function loadLocations() {
                     })
                 };
             }
-        },
-        templateResult: function (item) { return item.name; },
-        templateSelection: function (item) { return item.name; },
-        matcher: function (term, text) { return text.name.toUpperCase().indexOf(term.toUpperCase()) != -1; }
+        }
     });
 
     $('#ddlOriginLocations').on('select2:select', function (e) {
@@ -140,7 +137,13 @@ function loadLocations() {
                 selectedDestinationLocationId = selectedCookie.destinationLocation;
                 $('#ddlDestinationLocations').val(selectedDestinationLocationId).trigger('change.select2');
 
-                $("#dpDeparture").datepicker("setDate", new Date(selectedCookie.departureDate));
+                var departureDate = new Date(selectedCookie.departureDate);
+                var today = new Date();
+                if (departureDate >= today) {
+                    $("#dpDeparture").datepicker("setDate", departureDate);
+                } else {
+                    $("#dpDeparture").datepicker("setDate", today);
+                }
             }
         });
 
